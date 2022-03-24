@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<script type="text/javascript">
+
+		var listOfQuotes = [
+			"You're doing your best-- and that means you're doing just fine. Remember to start the mornings slow and on your own time. And, please go on a real vacation if you haven't done so already.",
+			"This gem from the English writer Jack London (1876-1916): \"Don’t loaf and invite inspiration; light out after it with a club, and if you don’t get it you will nonetheless get something that looks remarkably like it\".",
+			"You're an EXPERT in learning science!",
+			"Breathe. Take a walk. Do a dance. You can do this!",
+			"You have to start somewhere to get anywhere. Strive for progress not perfection.",
+			"Breathe and notice.  Slow down, it's just work.",
+			"Self-compassion is the greatest gift you can give yourself—and others.",
+			"Don't look down. Head up. Eyes Up. Chin Up. You've got this!",
+			"You're doing great! I'm writing this from the past and so I don't know for certain what is happening in your work, but I suspect there is a little change, some new exciting opportunities, and you probably feel like you are dropping the ball. But you're not! You're doing amazingly and your team recognizes that. Believe in yourself the way they do and remember to lift up your team members in the same way.",
+			"You won't get things right the first time - give yourself grace to make mistakes as you learn new processes and learn from those mistakes along the way.",
+			"Remember that nothing is permanent. That life throws you challenges that are tough, and you can either choose to confront them and overcome them, or run away from them and they will eventually catch up with you again. I choose to bravely tackle these challenges as much as I want to run away.",
+			"It will get warmer again! Spring is coming! Also, go look at your To Do list and find two things you can just get rid of. Not all the things are important things. Rejoice in throwing some of the unimportant things away.",
+			"Keep looking at change as an opportunity for growth and ask questions when something doesn't make sense.",
+			"Be kind to yourself!",
+			"Remember to take PTO. You have unlimited amounts, and the company will not collapse if you're not there.",
+			"You got this and take that PTO!",
+			"Take some time to slow down and reflect!",
+			"Remember, one of the big reasons you love your job is because of your team. Trust them and rely on them!",
+			"You don't need to be working every minute of the day. Take a lunch break. Go on a walk. Close your eyes and breathe.",
+			"You are doing great! Take a deep breath. You've got this!",
+			"You can't know the unknown, you can only act on the information you have (or think you have) in the moment.",
+		];
+
+		var listOfFontColors = [
+			'#FECF48', '#F42684', '#2FDB9E', '#1576D4'
+		];
+
+		function clicked()
+		{
+			let index = Math.floor(Math.random() * listOfQuotes.length);
+			document.getElementById('quoteDiv').innerHTML = listOfQuotes[index];
+
+			index = Math.floor(Math.random() * listOfFontColors.length);
+			document.getElementById('quoteDiv').style.borderColor = listOfFontColors[index];
+			document.getElementById('quoteDiv').style.visibility = 'visible';
+		}
+	</script>
+		
+
+	<div class='buttonDiv'>
+
+	<button onclick="clicked()" class='button'>ADVICE, PLEASE!</button>
+	</div>
+
+	<div id="quoteDiv" class="QuoteStyle">
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url("https://use.typekit.net/ntb1bmo.css");
+
+body{
+	background-color: #2F2F2F;
+}
+button{
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	font-size: medium;
+	padding: 1em;
+	cursor: pointer;
+}
+
+.buttonDiv {
+	width: 100%;
+	text-align: center;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+
+.QuoteStyle {
+	text-align: center;
+	font-family: proxima-nova,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: xx-large;
+	padding: 5%;
+	border-style: solid;
+	border-width: 8px;
+	color: white;
+	visibility: hidden;
+	margin: 5%;
+}
